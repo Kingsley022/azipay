@@ -1,0 +1,18 @@
+:root{
+  --green: #1f503f;
+  --padding: .5rem 5rem;
+  --padding-2: 3rem 5rem;
+  --gray: #636060;
+}
+
+*{
+  font-family: 'poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  transition: all .2s linear;
+}
+button{
+  cursor: pointer;
+}

@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Bruno+Ace+SC&family=Darumadrop+One&family=Exo+2:wght@500&family=Francois+One&family=Maven+Pro:wght@500&family=Noto+Sans+JP:wght@500&family=Quicksand:wght@500&family=Signika&family=Signika+Negative:wght@300&family=Tsukimi+Rounded:wght@500&family=Varela+Round&family=Ysabeau:wght@200&display=swap');
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    left: 0;
+    padding: var(--padding);
+    z-index: 999;
+}
+.scroll-active{
+    background: #ffff;
+}
+.navbar .logo{
+    display: flex;
+    align-items: center;
+    font-size: 21px;
+    font-weight: bold;
+    color: var(--green);
+    font-family: 'Signika', sans-serif;
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    font-size: 15px;
+}
+.navbar .buttons{
+    display: flex;
+    gap: 1.5rem;
+}
+.navbar .buttons button{
+    padding: .4rem 3rem;
+    background: none;
+    border-radius: 15px;
+}
+.navbar .buttons .login{
+    color: var(--green);
+    border: 1.5px solid;
+}
+.navbar .buttons .register{
+    color: #e9e7e7;
+    background: var(--green);
+}

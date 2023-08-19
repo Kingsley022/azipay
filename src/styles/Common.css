@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Neuton&family=Prata&display=swap');
+
+.header{
+    font-family: 'Neuton', serif;
+    letter-spacing: .05rem;
+    font-size: 41px;
+    color: var(--green);
+}
+.sub-head{
+    color: var(--gray);
+    font-size: 12px;
+}
+
+.mobile-app{
+    margin-top: 2rem;
+}
+.mobile-app .description{
+    color: #000;
+    font-weight: 550;
+    color: #111;
+    margin: .3rem 0;
+}
+.mobile-app .btns{
+    display: flex;
+    gap: 1rem;
+}
+.btns .btn-container{
+    background: #fff;
+    display: flex;
+    align-items: center;
+    padding: .5rem 1rem;
+    gap: .5rem;
+    border-radius: 12px;
+
+}
+.btns .btn-container .icon-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e4e3e3;
+    /* height:25px;
+    width: 25px; */
+    padding: 12px;
+    border-radius: 50%;
+}
+.btns .btn-container .icon,
+.btns .btn-container img{
+    width: 21px;
+    height: 21px;
+}
+.btns .btn-container .txt .desc{
+    color: gray;
+    font-size: 12px;
+}
+.btns .btn-container .txt .desc span{
+    font-weight: bold;
+    color: #000;
+    font-size: 16px;
+}

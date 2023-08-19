@@ -1,0 +1,286 @@
+.dashboard-container{
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    height: 100vh;
+    background: #dee6e7;
+}
+.side-menu-container{
+    background: #fff;
+}
+.side-menu-container .logo{
+    background: var(--green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    height: 15%;
+    gap: .3rem;
+}
+.side-menu-container ul{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    height: 75%;
+}
+.side-menu-container ul li{
+    padding: .8rem .5rem;
+    border-top: 1px solid #8080801a;
+    font-size: 12.5px;
+    cursor: pointer;
+}
+.side-menu-container ul .active{
+    border-left: 3px solid var(--green);
+    background: rgba(35, 168, 126, 0.1);
+}
+.side-menu-container ul .active .label-area{
+    color: var(--green);
+}
+.side-menu-container ul li .label-area{
+    display: flex;
+    justify-content: space-between;
+}
+.side-menu-container ul li .label-area .txt{
+    display: flex;
+    gap: .3rem;
+}
+.side-menu-container ul li .label-area .txt{
+    display: flex;
+    align-items: center;
+}
+.side-menu-container .subMenus{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+.side-menu-container .subMenus p:hover{
+    color: var(--green);
+    margin-left: .3rem;
+}
+
+/* Main Container Begins */
+.main-conatiner .top-details{
+    height: 8%;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 2rem;
+}
+.main-conatiner .top-details h4{
+    color: #ed2828;
+}
+.main-conatiner .top-details .details-container{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+.details-container .icon{
+    position: relative;
+    font-size: 21px;
+    color: #6d6d6d;
+}
+.details-container .icon sup{
+    background: #ed2828;
+    color: #fff;
+    font-size: 8px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: .7rem;
+}
+.details-container .details{
+    display: flex; 
+    align-items: center;
+    gap: .3rem;
+}
+.details-container .details .img-container{
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 39px;
+    height: 39px;
+}
+.details-container .details .img-container img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+.details-container .details p{
+    font-size: 15px;
+    font-weight: bold;
+}
+.details-container .details p span{
+    color: #6d6d6d;  
+    font-size: 13px; 
+    font-weight: normal;
+}
+
+/* Welcome Area */
+.welcome-container{
+    margin: 2rem 0;
+    padding: .5rem 2rem;
+
+}
+.welcome-container .wallet-container{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+.welcome-container h2{
+    font-size: 29px;
+}
+.welcome-container .msg{
+    padding: .3rem 0;
+    font-size: 12px;
+}
+/* .welcome-container .balance-area{
+} */
+.welcome-container .balance-area .balance-container{
+    background: var(--green);
+    padding: 2rem 1rem;
+    border-radius: 12px;
+}
+.balance-area .balance-container p{
+    color: #b5d3d0;
+    margin-bottom: .5rem;
+}
+.balance-area .balance-container h4{
+    font-size: 24px;
+    color: #fff;
+}
+.balance-area .balance-container h4 span{
+    font-size: 14px;
+    cursor: pointer;
+}
+.balance-area .balance-container .balance{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.balance-area .balance-container .balance button{
+    background: #b5d3d0;
+    color: var(--green);
+    padding: .7rem 1rem;
+    border-radius: 21px;
+    cursor: pointer;
+}
+.balance-area .quick-actions{
+    display: flex;
+    margin-top: 1.5rem;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.balance-area .quick-actions .action{
+    background: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem .5rem;
+    border-radius: 12px;
+    border: .5px solid #908c8c66;
+}
+.balance-area .quick-actions .action .icon{
+    background: #f3929233;
+    color: #ed2828;
+    padding: .5rem;
+    /* font-size: 18px; */
+    border-radius: 8px;
+}
+.balance-area .quick-actions .action p{
+    margin-top: .7rem;
+    font-size: 14px;
+    color: #3d3c3c;
+}
+
+/* Payroll */
+.wallet-container .payroll-area{
+    background: #fff;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1.5px solid rgba(144, 140, 140, 0.3);
+}
+.wallet-container .payroll-area .payroll{
+    text-align: center;
+    border-bottom: 1.5px solid rgba(144, 140, 140, 0.2);
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.wallet-container .payroll-area .payroll .pay{
+    background: #b5d3d0;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    padding: .3rem 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #2e2e2e;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.wallet-container .payroll-area .payroll .day{
+    display: flex;
+    align-items: center;
+    margin-bottom: .5rem;
+    color: #3d3c3c;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+.wallet-container .payroll-area .payroll .day span{
+    font-size: 12px;
+    margin-top: .2rem;
+    font-weight: normal;
+}
+.wallet-container .payroll-area .payroll p{
+    font-weight: bold;
+}
+.wallet-container .payroll-area .total-employee{
+   padding: .5rem 1rem;
+}
+.payroll-area .total-employee .txt{
+    color: #424141;
+}
+.payroll-area .total-employee .genders{
+    display: flex;
+    font-size: 12px;
+    /* justify-content: space-between; */
+}
+.payroll-area .total-employee .genders .male,
+.payroll-area .total-employee .genders .female{
+    width: 50%;
+}
+.payroll-area .total-employee .genders .male p,
+.payroll-area .total-employee .genders .female p{
+    color: #3d3c3c;
+    font-size: 10px;
+}
+.payroll-area .total-employee .genders .male .line{
+    height:5px;
+    background: var(--green);
+    margin-bottom: .3rem;
+}
+.payroll-area .total-employee .genders .female .line{
+    height:5px;
+    background: red;
+    margin-bottom: .3rem;
+}
